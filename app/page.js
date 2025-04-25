@@ -49,7 +49,8 @@ export default function LandingPage() {
               </Link>
             </nav>
             <Button asChild className="bg-[#0084FF] hover:bg-[#0066CC]">
-              <Link href="http://localhost:3000/auth">Login</Link>
+              {/* <Link href="http://localhost:3000/auth">Login</Link> */}
+                  <Link href={`${process.env.NEXT_PUBLIC_HOST}`}>Login</Link>
             </Button>
           </div>
         </div>
